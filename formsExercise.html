@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms Exercise</title>
+</head>
+<body>
+<h1>Register</h1>
+
+<form>
+	<label for="firstName">First Name:</label>
+		<input id="firstName" type="text" placeholder="John" name="firstName" required="">
+	<label for="lastName">Last Name:</label>
+		<input id="lasttName" type="text" placeholder="Smith" name="lastName" required="">
+<p>
+	<label for="male">Male</label>
+		<input id="male" type="radio" name="gender" value="MALE">
+	<label for="female">Female</label>
+		<input id="female" type="radio" name="gender" value="FEMALE">
+</p>
+<p>
+	<label for="Email">Email:</label>
+		<input id="Email" type="Email" placeholder="your email" name="email" required="">
+
+	<label for="password"> Password:</label>
+		<input id="password" type="password" placeholder="password" name="password" minlength="5" maxlength="10" required="">
+</p>
+<p> 
+<label for="birthday">Birthday:</label>
+		<select name="Month">
+			<option>Month</option>
+			<option>April</option>
+			<option>May</option>
+			<option>June</option>
+		</select>
+
+		<select name="Day">
+			<option>Day</option>
+			<option>01</option>
+			<option>02</option>
+			<option>03</option>
+		</select>
+
+		<select name="Year">
+			<option>Year</option>
+			<option>1999</option>
+			<option>1998</option>
+			<option>1997</option>
+		</select>
+</p>
+<p>
+	<label for="t&c">I agree to the terms and conditions</label>
+		<input id="t&c" type="checkbox" name="terms and conditions">
+</p>
+
+<button>Submit</button>
+
+</form>
+</body>
+</html>

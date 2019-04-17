@@ -1,0 +1,23 @@
+h1 {
+	color: #FF8000; 
+
+	/*border-color: purple;
+	border-width: 5px;
+	border-style: solid;*/
+	border: 8px dashed rgb(255,100,80)
+}
+
+/*width 
+color 
+style */
+
+h4 {
+	background: rgb(255,100,80);
+}
+body {
+	background: pink
+
+/*	background: url(https://media.istockphoto.com/vectors/soft-pink-rose-print-seamless-background-vector-id628146430?k=6&m=628146430&s=612x612&w=0&h=7CiE9CezERzJLB0kr4qKx1YYNplHjKjvO9Ndisc4Yj4=);
+	background-repeat: no-repeat;
+	background-size: cover;*/
+}
