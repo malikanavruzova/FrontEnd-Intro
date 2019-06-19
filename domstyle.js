@@ -1,4 +1,5 @@
 //DEFINE A CLASS IN CSS
+
 .another-class{
 	color: purple;
 	fontSize: 76px;
