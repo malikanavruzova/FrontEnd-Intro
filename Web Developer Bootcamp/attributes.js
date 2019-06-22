@@ -13,3 +13,14 @@ $("input").val();
 //.val with an empty string is used to reset the text input 
 $("select").val(); //what this does is grab the value of what the user selected from the dropdown menu
 //return "Toad"
+
+//MANIPULATING CLASSES
+
+$("h1").addClass("correct"); //applies the CSS 
+$("h1").removeClass("correct");
+
+$("li").addClass("wrong");// with vanillaJS, what we would do is select the lis with querySelectorAll and loop through and add classList.add("wrong");
+
+$("li").toggleClass("correct");
+
+$("li").first().toggleClass("done");
