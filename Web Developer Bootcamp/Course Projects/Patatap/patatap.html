@@ -6,26 +6,26 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.2/howler.core.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="patatap.css">
 
-	<script type="text/paperscript" canvas="myCanvas">
+	<script type="text/paperscript" canvas="myCanvas">s
 
 		var keyData = {
 			a: {
 				color: 'purple'
-				sounds: new Howl({
+				sound: new Howl({
 					src: ['sounds/bubbles.mp3']
-		});
-			}
+				})
+			},
 			s: {
 				color: 'orange'
-				sounds: new Howl({
+				sound: new Howl({
 					src: ['sounds/clay.mp3']
-		});
+				})
 			}
 			j: {
 				color: 'blue'
-				sounds: new Howl({
+				sound: new Howl({
 					src: ['sounds/confetti.mp3']
-		});
+				})
 			}
 		}
 
@@ -36,9 +36,10 @@
 				var maxPoint = new Point (view.size.width, view.size.height);
 				var randomPoint= Point.random();
 				var point = maxPoint * randomPoint;
-				var newCircle= new Path.Circle(point, 500)
+				var newCircle= new Path.Circle(point, 500);
 				newCircle.fillColor = keyData[event.key].color;
-				
+				keyData[event.key].sound.play();
+
 				circles.push(newCircle);
 			}
 			
