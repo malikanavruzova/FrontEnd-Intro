@@ -3090,3 +3090,5 @@ __git_complete gitk __gitk_main
 if [ Cygwin = "$(uname -o 2>/dev/null)" ]; then
 __git_complete git.exe __git_main
 fi
+
+git config --global core.editor "subl -n -w"
