@@ -6,10 +6,12 @@
 // });
 
 var request = require("request");
+
+
 request ('https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400', function(error, response, body){ 
 	if (!error && response.statusCode == 200) {
 		var parsedData = JSON.parse(body);
-		console.log(parsedData);
+		console.log(parsedData.results.sunrise);
 	} 
 });
 
@@ -18,3 +20,15 @@ request ('https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400', fu
 //2) then you add your callback function and 3 pieces of information:
 //	a. check for an error, check for the status code of the response, and 
 //	do something with the body(if there is no error and the status code is 200) 
+
+//********** NEW SYNTAX **************
+
+const request = require("request");
+
+
+request ('https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400', (error, response, body) => { 
+	if (!error && response.statusCode == 200) {
+		const parsedData = JSON.parse(body);
+		console.log(parsedData.results.sunrise);
+	} 
+});
