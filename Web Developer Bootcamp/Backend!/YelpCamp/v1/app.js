@@ -8,6 +8,9 @@ app.set("view engine", "ejs");
 var campgrounds = [
 		{name: "Sibbald Point", image: "https://mk0theadventuregfnyq.kinstacdn.com/wp-content/uploads/HowToSetUpACampsite1.jpg"}, 
 		{name: "Granite Hill", image: "https://tinboxtraveller.co.uk/wp-content/uploads/2018/08/PRIMA-campsite-1024x660.jpg"}, 
+		{name: "Cherry Beach", image: "https://grist.files.wordpress.com/2017/05/tent-campsite-by-river.jpg?w=1200&h=675&crop=1"},
+		{name: "Sibbald Point", image: "https://mk0theadventuregfnyq.kinstacdn.com/wp-content/uploads/HowToSetUpACampsite1.jpg"}, 
+		{name: "Granite Hill", image: "https://tinboxtraveller.co.uk/wp-content/uploads/2018/08/PRIMA-campsite-1024x660.jpg"}, 
 		{name: "Cherry Beach", image: "https://grist.files.wordpress.com/2017/05/tent-campsite-by-river.jpg?w=1200&h=675&crop=1"}
 	]
 
