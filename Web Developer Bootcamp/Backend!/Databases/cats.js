@@ -16,5 +16,9 @@ var Georgy = new Cat({
 	temperament: "Grouchy"
 });
 
-george.save();
+george.save(function(err, cat){
+	if(err){
+		console.log("Something went WRONG")
+	}
+});
 //retrieve all cats from the DB and console.log each one 
